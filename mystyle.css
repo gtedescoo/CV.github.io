@@ -75,7 +75,7 @@ body::before {
 .qr span { color: var(--yellow); font-size: 8px; letter-spacing: .1em; }
 
 .info { display: flex; gap: 16px; padding: 16px 24px; background: var(--night); border-top: 1px solid var(--line); }
-.photo { width: 56px; height: 56px; border-radius: 8px; object-fit: cover; flex-shrink: 0; border: 2px solid var(--yellow); background: var(--line); }
+.photo { background-image: url("images/profile.png"); width: 56px; height: 56px; border-radius: 8px; object-fit: cover; flex-shrink: 0; border: 2px solid var(--yellow); background: var(--line); }
 .info .small-label { color: #fff; opacity: .5; font-size: 12px; text-transform: uppercase; letter-spacing: .1em; }
 .info .place { color: #fff; font-size: 14px; font-weight: 500; margin: 4px 0; }
 .languages { display: flex; gap: 6px; }
