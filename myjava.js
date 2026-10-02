@@ -16,3 +16,29 @@ barWidths.forEach((w, i) => {
   bar.style.opacity = i % 2 === 0 ? 1 : .25;
   barcode.appendChild(bar);
 });
+
+
+const projects = {
+  igb: {
+    title: "Eventos y Comunicación · IGB, Copenhague",
+    text: "Planificación y coordinación de eventos mensuales en un espacio gastronómico internacional. Organización del espacio y disposición de sala en función del tipo de evento y del flujo de clientes, gestión de proveedores, calendario de actividades y comunicación con clientes."
+  }
+};
+
+const overlay = document.getElementById('modal-overlay');
+const modalTitle = document.getElementById('modal-title');
+const modalText = document.getElementById('modal-text');
+
+document.querySelectorAll('.project-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const key = btn.dataset.project;
+    modalTitle.textContent = projects[key].title;
+    modalText.textContent = projects[key].text;
+    overlay.classList.add('open');
+  });
+});
+
+
+
+
