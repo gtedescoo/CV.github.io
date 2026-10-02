@@ -1,7 +1,7 @@
 // Flip the badge on click or Enter/Space
 const badge = document.getElementById('badge');
 const toggleFlip = () => badge.classList.toggle('flipped');
-badge.addEventListener('click', (e) => { if (!e.target.closest('a')) toggleFlip(); });
+badge.addEventListener('click', (e) => { if (!e.target.closest('a') && !e.target.closest('button')) toggleFlip(); });
 badge.addEventListener('keydown', (e) => {
   if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFlip(); }
 });
