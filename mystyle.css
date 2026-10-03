@@ -156,3 +156,16 @@ body::before {
 }
 .modal h3 { color: var(--night); font-size: 14px; margin-bottom: 8px; font-weight: 700; text-transform: none; letter-spacing: normal; }
 .modal p { color: #4a4a6a; font-size: 13px; line-height: 1.5; }
+.doc-link {
+  display: none;
+  margin-top: 8px;
+  font-size: 11px; font-weight: 700;
+  color: var(--blue-bright); text-decoration: none;
+  border: 1px solid var(--blue-bright); border-radius: 8px;
+  padding: 8px 12px;
+  transition: background-color .15s, color .15s;
+}
+.doc-link:hover { background: var(--blue-bright); color: #fff; }
+
+/* Solo se muestran los documentos del proyecto activo */
+#modal-overlay[data-project="milano"] .doc-milano { display: block; }
