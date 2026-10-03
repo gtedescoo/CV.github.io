@@ -39,6 +39,7 @@ document.querySelectorAll('.project-btn').forEach(btn => {
     const key = btn.dataset.project;
     modalTitle.textContent = projects[key].title;
     modalText.textContent = projects[key].text;
+    overlay.dataset.project = key;
     overlay.classList.add('open');
   });
 });
