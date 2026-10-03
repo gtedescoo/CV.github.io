@@ -51,6 +51,7 @@ body::before {
 .badge.flipped .flip { transform: rotateY(180deg); }
 .face {
   grid-area: 1 / 1;
+  align-self: start;
   border-radius: 16px;
   overflow: hidden;
   backface-visibility: hidden;
