@@ -133,12 +133,16 @@ body::before {
 
 
 .project-btn {
-  background: none; border: none; cursor: pointer; padding: 0;
-  display: block; color: var(--yellow); font-size: 10px; margin-top: 2px;
-  text-decoration: underline dotted; text-underline-offset: 2px;
-  font-weight: 700;
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 10px; font-weight: 700;
+  padding: 4px 10px; border-radius: 999px;
+  border: 1px solid var(--yellow); color: var(--yellow);
+  background: none; cursor: pointer;
+  text-decoration: none;
+  transition: background-color .15s, color .15s;
 }
-.project-btn:hover { color: #fff; }
+.project-btn:hover { background: var(--yellow); color: var(--night); }
 
 .modal-overlay {
   position: fixed; inset: 0; background: rgba(0,0,0,.6);
