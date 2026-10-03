@@ -22,7 +22,13 @@ const projects = {
   igb: {
     title: "Eventos y Comunicación · IGB, Copenhague",
     text: "Planificación y coordinación de eventos mensuales en un espacio gastronómico internacional. Organización del espacio y disposición de sala en función del tipo de evento y del flujo de clientes, gestión de proveedores, calendario de actividades y comunicación con clientes."
+  },
+  milano: {
+    title: "Web y Análisis de Datos · Univ. Statale di Milano",
+    text: "Proyecto académico en Comunicación Corporativa con varios ejes: desarrollo de una web propia en HTML/CSS; análisis de datos con Stata y Excel sobre sueño y bienestar en Francia y Suecia, con test estadísticos y regresión lineal; redacción de una reseña de cine sobre poder digital en formato de review online; e investigación de tendencias de consumo mediante entrevistas en equipo para el curso de Consumer Culture."
   }
+};
+  
 };
 
 const overlay = document.getElementById('modal-overlay');
