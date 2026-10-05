@@ -1,14 +1,25 @@
 // Flip the badge on click or Enter/Space
 const badge = document.getElementById('badge');
+
 const toggleFlip = () => badge.classList.toggle('flipped');
-badge.addEventListener('click', (e) => { if (!e.target.closest('a') && !e.target.closest('button')) toggleFlip(); });
+
+badge.addEventListener('click', (e) => {
+  if (!e.target.closest('a') && !e.target.closest('button')) {
+    toggleFlip();
+  }
+});
+
 badge.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFlip(); }
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleFlip();
+  }
 });
 
 // Decorative barcode
 const barWidths = [3,1,2,3,1,2,1,3,2,1,3,1,2,2,3,1,2,3,1,1,2,3,1,2,3,1,2,1,3,2,1,2,3,1,2];
 const barcode = document.getElementById('barcode');
+
 barWidths.forEach((w, i) => {
   const bar = document.createElement('div');
   bar.style.width = (w * 2) + 'px';
@@ -17,7 +28,7 @@ barWidths.forEach((w, i) => {
   barcode.appendChild(bar);
 });
 
-
+// Project details shown in the modal
 const projects = {
   igb: {
     title: "Eventos y Comunicación · IGB, Copenhague",
@@ -29,10 +40,12 @@ const projects = {
   }
 };
 
+// Modal elements
 const overlay = document.getElementById('modal-overlay');
 const modalTitle = document.getElementById('modal-title');
 const modalText = document.getElementById('modal-text');
 
+// Open modal on project button click
 document.querySelectorAll('.project-btn').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -44,10 +57,21 @@ document.querySelectorAll('.project-btn').forEach(btn => {
   });
 });
 
-document.getElementById('modal-close').addEventListener('click', () => overlay.classList.remove('open'));
-overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('open'); });
+// Close modal: close button, click outside, or Escape key
+document.getElementById('modal-close').addEventListener('click', () => {
+  overlay.classList.remove('open');
+});
+
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {
+    overlay.classList.remove('open');
+  }
+});
+
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') overlay.classList.remove('open');
+  if (e.key === 'Escape') {
+    overlay.classList.remove('open');
+  }
 });
 
 
