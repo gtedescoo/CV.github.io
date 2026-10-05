@@ -1,27 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Giulia Tedesco – CV</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="mystyle.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giulia Tedesco – CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="mystyle.css" />
 </head>
 <body>
+
   <div class="scene">
-    <div><div class="lanyard-a" style="margin:auto"></div><div class="lanyard-b"></div><div class="lanyard-c" style="margin:auto"></div></div>
+
+    <div>
+      <div class="lanyard-a" style="margin:auto"></div>
+      <div class="lanyard-b"></div>
+      <div class="lanyard-c" style="margin:auto"></div>
+    </div>
 
     <div class="badge" id="badge" tabindex="0" role="button" aria-label="Girar el pase">
       <div class="flip">
 
         <!-- FRONT -->
         <div class="face front">
+
           <div class="header">
             <div class="row">
               <span class="label mono">Evento Profesional · 2026</span>
             </div>
+
             <div class="hole"></div>
+
             <div class="row" style="align-items:flex-start; gap:8px">
               <div>
                 <h1 class="name">Giulia</h1>
@@ -30,7 +39,7 @@
               </div>
               <div class="qr">
                 <img src="linkedin.png" alt="QR de LinkedIn" />
-                 <a href="https://linkedin.com/in/giulia-tedesco" target="_blank" rel="noopener noreferrer" class="qr-link mono">LinkedIn</a>
+                <a href="https://linkedin.com/in/giulia-tedesco" target="_blank" rel="noopener noreferrer" class="qr-link mono">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -60,7 +69,7 @@
               <span class="pill">Org. de Eventos</span>
               <span class="pill">Redes Sociales</span>
               <span class="pill">Marketing Editorial</span>
-              <span class="pill" >Web (HTML/CSS)</span>
+              <span class="pill">Web (HTML/CSS)</span>
             </div>
           </div>
 
@@ -69,12 +78,17 @@
               <div id="barcode"></div>
               <small class="mono">Giulia·Tedesco·CV</small>
             </div>
-            <div class="flip-hint"><small class="mono" style="margin:0 0 4px">girar</small><b>↺</b></div>
+            <div class="flip-hint">
+              <small class="mono" style="margin:0 0 4px">girar</small>
+              <b>↺</b>
+            </div>
           </div>
+
         </div>
 
         <!-- BACK -->
         <div class="face back">
+
           <div class="back-header">
             <div class="label mono">Curriculum Vitae</div>
             <h2>Giulia Tedesco</h2>
@@ -83,6 +97,7 @@
 
           <div class="section">
             <h3 class="mono">Formación</h3>
+
             <div class="item">
               <div>
                 <b>Máster en Comunicación Corporativa</b>
@@ -90,6 +105,7 @@
                 <em class="mono">Erasmus → Universidad Carlos III Madrid 2026-2027</em>
               </div>
             </div>
+
             <div class="item gray">
               <div>
                 <b>Grado en Cooperación Internacional</b>
@@ -102,22 +118,28 @@
 
           <div class="section">
             <h3 class="mono">Experiencia</h3>
+
             <div class="item">
               <div>
-             <b>Eventos y Comunicación</b>
-              <small class="mono">IGB, Copenhague · 2023 — 2025</small>
-            <button class="project-btn mono" data-project="igb">Ver proyecto ↗</button>
+                <b>Eventos y Comunicación</b>
+                <small class="mono">IGB, Copenhague · 2023 — 2025</small>
+                <button class="project-btn mono" data-project="igb">Ver proyecto ↗</button>
+              </div>
             </div>
-            </div>
-           <div class="item">
-           <div>
-            <b>Web y Análisis de Datos</b>
-             <small class="mono">Univ. Statale di Milano · 2025-2026</small>
-              <button class="project-btn mono" data-project="milano">Ver proyecto ↗</button>
-           </div>
-            </div>
+
             <div class="item">
-              <div><b>Intercambio Erasmus</b><small class="mono">Periodismo, Univ. Carlos III, Madrid · 2025</small></div>
+              <div>
+                <b>Web y Análisis de Datos</b>
+                <small class="mono">Univ. Statale di Milano · 2025-2026</small>
+                <button class="project-btn mono" data-project="milano">Ver proyecto ↗</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div>
+                <b>Intercambio Erasmus</b>
+                <small class="mono">Periodismo, Univ. Carlos III, Madrid · 2025</small>
+              </div>
             </div>
           </div>
 
@@ -125,25 +147,28 @@
             <span class="mono">IT · EN · ES · DE · DK</span>
             <b>↺</b>
           </div>
+
         </div>
 
       </div>
     </div>
 
     <p class="hint mono">Haz clic para girar</p>
+
   </div>
-<div class="modal-overlay" id="modal-overlay">
-  <div class="modal" id="modal-box">
-    <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
-    <h3 class="mono" id="modal-title"></h3>
-    <p id="modal-text"></p>
-    <a href="https://gtedescoo.github.io" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Ver página web</a>
-    <a href="Data Analysis project.pdf" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Análisis de datos</a>
-    <a href="GIULIA TEDESCO FILM REVIEW.pdf" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Reseña de cine</a>
-    <a href="Giulia Tedesco Essay.docx" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Ensayo</a>
+
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Cerrar">✕</button>
+      <h3 class="mono" id="modal-title"></h3>
+      <p id="modal-text"></p>
+      <a href="https://gtedescoo.github.io" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Ver página web</a>
+      <a href="Data Analysis project.pdf" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Análisis de datos</a>
+      <a href="GIULIA TEDESCO FILM REVIEW.pdf" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Reseña de cine</a>
+      <a href="Giulia Tedesco Essay.docx" target="_blank" rel="noopener noreferrer" class="doc-link mono doc-milano">Ensayo</a>
+    </div>
   </div>
-</div>
-    
-<script src="myjava.js"></script>
+
+  <script src="myjava.js"></script>
 </body>
 </html>
