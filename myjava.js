@@ -37,8 +37,11 @@ const projects = {
   milano: {
     title: "Web y Análisis de Datos · Univ. Statale di Milano",
     text: "Proyecto académico en Comunicación Corporativa con varios ejes: desarrollo de una web propia en HTML/CSS; análisis de datos con Stata y Excel sobre sueño y bienestar en Francia y Suecia, con test estadísticos y regresión lineal; redacción de una reseña de cine sobre poder digital en formato de review online; e investigación de tendencias de consumo mediante entrevistas en equipo para el curso de Consumer Culture."
-  }
-};
+  },
+  erasmus: {
+    title: "Intercambio Erasmus · UC3M, Madrid",
+    text: "Formación práctica en español mediante proyectos individuales y de equipo. En Información Institucional, diseño de una estrategia de rueda de prensa, comunicación política e identidad visual (incluyendo diseño de logo). En Publicidad en Medios Informativos, desarrollo en equipo de una campaña publicitaria completa, con estrategia creativa y planificación de medios. En Periodismo en la Red, redacción y gestión de un sitio web completo utilizando herramientas de CRM y WordPress."
+  };
 
 // Modal elements
 const overlay = document.getElementById('modal-overlay');
