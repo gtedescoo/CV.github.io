@@ -41,7 +41,8 @@ const projects = {
   erasmus: {
     title: "Intercambio Erasmus · UC3M, Madrid",
     text: "Formación práctica en español mediante proyectos individuales y de equipo. En Información Institucional, diseño de una estrategia de rueda de prensa, comunicación política e identidad visual (incluyendo diseño de logo). En Publicidad en Medios Informativos, desarrollo en equipo de una campaña publicitaria completa, con estrategia creativa y planificación de medios. En Periodismo en la Red, redacción y gestión de un sitio web completo utilizando herramientas de CRM y WordPress."
-  };
+  }
+}; 
 
 // Modal elements
 const overlay = document.getElementById('modal-overlay');
